@@ -43,6 +43,7 @@ public class EmployeeService {
      */
     public List<Employee> getAll(){
 
+        //1.获取所有employee对象;
         List<Employee> employees = employeeMapper.selectByExampleWithDept(null);
         return employees;
     }

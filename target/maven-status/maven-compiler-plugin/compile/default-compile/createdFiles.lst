@@ -6,6 +6,7 @@ com\sun\curd\test\MbgTest.class
 com\sun\curd\bean\Department.class
 com\sun\curd\bean\DepartmentExample.class
 com\sun\curd\bean\EmployeeExample$Criterion.class
+com\sun\curd\controller\LayoutController.class
 com\sun\curd\test\MvcTest.class
 com\sun\curd\bean\DepartmentExample$GeneratedCriteria.class
 com\sun\curd\bean\EmployeeExample$Criteria.class

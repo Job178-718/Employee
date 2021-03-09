@@ -20,7 +20,7 @@ public class MbgTest {
         /*是否写入*/
         boolean overwrite = true;
         /*加载配置文件*/
-        File configFile = new File("MBG.xml");
+        File configFile = new File("mbg.xml");
         /*提示信息*/
         ConfigurationParser cp = new ConfigurationParser(warnings);
         /*解析配置文件*/

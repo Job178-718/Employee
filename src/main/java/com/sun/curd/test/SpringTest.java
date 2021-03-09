@@ -3,10 +3,13 @@ package com.sun.curd.test;
 import com.sun.curd.bean.Department;
 import com.sun.curd.bean.Employee;
 import com.sun.curd.bean.EmployeeExample;
+import com.sun.curd.bean.Manager;
 import com.sun.curd.dao.DepartmentMapper;
 import com.sun.curd.dao.EmployeeMapper;
 
+import com.sun.curd.dao.ManagerMapper;
 import com.sun.curd.service.EmployeeService;
+import com.sun.curd.service.ManagerService;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -42,6 +45,9 @@ public class SpringTest {
 
     @Autowired
     DepartmentMapper departmentMapper;
+
+    @Autowired
+    ManagerService managerService;
 
     @Autowired
     SqlSession sqlSession;
@@ -118,6 +124,12 @@ public class SpringTest {
         for(Employee employee : list){
             System.out.println(employee);
         }
+    }
+
+    @Test
+    public void selectManager(){
+        //目的：通过username,password获取到数据库中的内容
+        managerService.getManager();
     }
 
 

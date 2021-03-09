@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="SSM-CURD:war exploded" />
+      <artifact name="SSM_CURD:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
@@ -15,6 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
+        <option value="Jsp File" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -49,25 +55,57 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\SSM\项目\SSM_CURD" />
+      <recent name="E:\SSM\项目\SSM_CURD\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SSM\项目\SSM_CURD\src\main\webapp\img" />
+      <recent name="E:\SSM\项目\SSM_CURD\src\main\webapp\WEB-INF\view" />
+      <recent name="E:\SSM\项目\SSM_CURD\src\main\webapp\static" />
+      <recent name="E:\SSM\项目\SSM_CURD\src\main\webapp\WEB-INF" />
+      <recent name="E:\SSM\项目\SSM_CURD\src\main\webapp" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.sun.curd.service" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\SSM\项目\SSM_CURD\src\main\webapp\WEB-INF" />
-      <recent name="E:\SSM\项目\SSM_CURD\src\main\webapp" />
-      <recent name="E:\SSM\项目\SSM_CURD\src\main\resources" />
-      <recent name="E:\SSM\项目\SSM_CURD\src\main\java\com\sun\curd" />
-    </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat">
-    <configuration name="MvcTest.testMvc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Equal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sun.test01.Equal" />
+      <module name="GetPicture" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sun.test01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneralClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sun.test01.GeneralClass" />
+      <module name="GetPicture" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sun.test01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MbgTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sun.curd.test.MbgTest" />
       <module name="SSM_CURD" />
       <extension name="coverage">
         <pattern>
@@ -75,15 +113,24 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.sun.curd.test" />
-      <option name="MAIN_CLASS_NAME" value="com.sun.curd.test.MvcTest" />
-      <option name="METHOD_NAME" value="testMvc" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="YouWu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sun.youwu.YouWu" />
+      <module name="GetPicture" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sun.youwu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringTest.selectManager" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SSM_CURD" />
       <extension name="coverage">
         <pattern>
@@ -93,56 +140,55 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.sun.curd.test" />
       <option name="MAIN_CLASS_NAME" value="com.sun.curd.test.SpringTest" />
-      <option name="METHOD_NAME" value="insert" />
+      <option name="METHOD_NAME" value="selectManager" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringTest.insertEmp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SSM_CURD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sun.curd.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sun.curd.test" />
-      <option name="MAIN_CLASS_NAME" value="com.sun.curd.test.SpringTest" />
-      <option name="METHOD_NAME" value="insertEmp" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="GetPicture" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringTest.selectEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SSM_CURD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sun.curd.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sun.curd.test" />
-      <option name="MAIN_CLASS_NAME" value="com.sun.curd.test.SpringTest" />
-      <option name="METHOD_NAME" value="selectEmployee" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringTest.springTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SSM_CURD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sun.curd.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sun.curd.test" />
-      <option name="MAIN_CLASS_NAME" value="com.sun.curd.test.SpringTest" />
-      <option name="METHOD_NAME" value="springTest" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="GetPicture" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,7 +197,7 @@
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/SSM_CURD_war_exploded/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="SSM-CURD:war exploded">
+        <artifact name="SSM_CURD:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/SSM_CURD_war_exploded" />
           </settings>
@@ -218,7 +264,6 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="SSM_CURD:war exploded" />
-          <artifact name="SSM-CURD:war exploded" />
         </option>
       </method>
     </configuration>
@@ -329,20 +374,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.MvcTest.testMvc" />
-      <item itemvalue="JUnit.SpringTest.insertEmp" />
-      <item itemvalue="JUnit.SpringTest.insert" />
-      <item itemvalue="JUnit.SpringTest.springTest" />
-      <item itemvalue="JUnit.SpringTest.selectEmployee" />
+      <item itemvalue="Application.YouWu" />
+      <item itemvalue="Application.MbgTest" />
+      <item itemvalue="Application.Equal" />
+      <item itemvalue="Application.GeneralClass" />
+      <item itemvalue="JUnit.SpringTest.selectManager" />
       <item itemvalue="Tomcat Server.Tomcat" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpringTest.selectEmployee" />
-        <item itemvalue="JUnit.SpringTest.insert" />
-        <item itemvalue="JUnit.SpringTest.springTest" />
-        <item itemvalue="JUnit.SpringTest.insertEmp" />
-        <item itemvalue="JUnit.MvcTest.testMvc" />
+        <item itemvalue="Application.Equal" />
+        <item itemvalue="Application.GeneralClass" />
+        <item itemvalue="JUnit.SpringTest.selectManager" />
+        <item itemvalue="Application.MbgTest" />
+        <item itemvalue="Application.YouWu" />
       </list>
     </recent_temporary>
   </component>
@@ -356,6 +401,11 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -382,8 +432,24 @@
       <workItem from="1613699640802" duration="637000" />
       <workItem from="1613879129623" duration="16407000" />
       <workItem from="1613977719793" duration="10644000" />
-      <workItem from="1614050803589" duration="16622000" />
-      <workItem from="1615260188626" duration="1632000" />
+      <workItem from="1614050803589" duration="17732000" />
+      <workItem from="1614173086281" duration="1394000" />
+      <workItem from="1614176805350" duration="272000" />
+      <workItem from="1614426649320" duration="1943000" />
+      <workItem from="1614475698775" duration="2891000" />
+      <workItem from="1614478636649" duration="1079000" />
+      <workItem from="1614479742333" duration="16277000" />
+      <workItem from="1614668938942" duration="1767000" />
+      <workItem from="1614673579023" duration="3165000" />
+      <workItem from="1614736940620" duration="3681000" />
+      <workItem from="1614761749780" duration="14619000" />
+      <workItem from="1614940796770" duration="3282000" />
+      <workItem from="1614995231382" duration="4032000" />
+      <workItem from="1615000162565" duration="9599000" />
+      <workItem from="1615125746450" duration="5963000" />
+      <workItem from="1615212152973" duration="7116000" />
+      <workItem from="1615260073500" duration="1302000" />
+      <workItem from="1615284349044" duration="3520000" />
     </task>
     <servers />
   </component>
@@ -391,101 +457,129 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="25" key="#Inspections" timestamp="1612531509766">
+    <state x="275" y="25" key="#Inspections" timestamp="1614479297382">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="25" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1612531509766" />
+    <state x="275" y="25" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1614479297382" />
     <state x="275" y="25" key="#JSP" timestamp="1612589584144">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="25" key="#JSP/0.0.1366.728@0.0.1366.728" timestamp="1612589584144" />
-    <state x="275" y="25" key="#Project_Structure" timestamp="1612509899909">
+    <state x="275" y="25" key="#Project_Structure" timestamp="1614477086957">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="25" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1612509899909" />
+    <state x="275" y="25" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1614477086957" />
     <state x="275" y="25" key="#Tomcat_Server" timestamp="1612531347385">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="25" key="#Tomcat_Server/0.0.1366.728@0.0.1366.728" timestamp="1612531347385" />
-    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615260272212">
+    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615300406368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1615260272212" />
-    <state x="488" y="57" key="#com.intellij.ide.util.MemberChooser" timestamp="1612961278955">
+    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1615300406368" />
+    <state x="488" y="57" key="#com.intellij.ide.util.MemberChooser" timestamp="1615213790003">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1612961278955" />
-    <state x="463" y="107" key="FileChooserDialogImpl" timestamp="1612531342401">
+    <state x="488" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1615213790003" />
+    <state x="463" y="107" key="FileChooserDialogImpl" timestamp="1615260179621">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1612531342401" />
-    <state width="1322" height="218" key="GridCell.Tab.0.bottom" timestamp="1615263050247">
+    <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1615260179621" />
+    <state width="1118" height="569" key="GridCell.Tab.0.bottom" timestamp="1615300976169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="218" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1615263050247" />
-    <state width="1322" height="218" key="GridCell.Tab.0.center" timestamp="1615263050247">
+    <state width="1118" height="569" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1615300976169" />
+    <state width="1118" height="569" key="GridCell.Tab.0.center" timestamp="1615300976169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="218" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1615263050247" />
-    <state width="1322" height="218" key="GridCell.Tab.0.left" timestamp="1615263050247">
+    <state width="1118" height="569" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1615300976169" />
+    <state width="1118" height="569" key="GridCell.Tab.0.left" timestamp="1615300976168">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="218" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1615263050247" />
-    <state width="1322" height="218" key="GridCell.Tab.0.right" timestamp="1615263050247">
+    <state width="1118" height="569" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1615300976168" />
+    <state width="1118" height="569" key="GridCell.Tab.0.right" timestamp="1615300976169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="218" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1615263050247" />
-    <state width="1118" height="569" key="GridCell.Tab.1.bottom" timestamp="1614093992916">
+    <state width="1118" height="569" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1615300976169" />
+    <state width="1118" height="569" key="GridCell.Tab.1.bottom" timestamp="1615300976169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="569" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614093992916" />
-    <state width="1118" height="569" key="GridCell.Tab.1.center" timestamp="1614093992915">
+    <state width="1118" height="569" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1615300976169" />
+    <state width="1118" height="569" key="GridCell.Tab.1.center" timestamp="1615300976169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="569" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1614093992915" />
-    <state width="1118" height="569" key="GridCell.Tab.1.left" timestamp="1614093992915">
+    <state width="1118" height="569" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1615300976169" />
+    <state width="1118" height="569" key="GridCell.Tab.1.left" timestamp="1615300976169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="569" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1614093992915" />
-    <state width="1118" height="569" key="GridCell.Tab.1.right" timestamp="1614093992915">
+    <state width="1118" height="569" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1615300976169" />
+    <state width="1118" height="569" key="GridCell.Tab.1.right" timestamp="1615300976169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="569" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1614093992915" />
-    <state width="1118" height="569" key="GridCell.Tab.2.bottom" timestamp="1614093992917">
+    <state width="1118" height="569" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1615300976169" />
+    <state width="1118" height="569" key="GridCell.Tab.2.bottom" timestamp="1615300976169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="569" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614093992917" />
-    <state width="1118" height="569" key="GridCell.Tab.2.center" timestamp="1614093992916">
+    <state width="1118" height="569" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1615300976169" />
+    <state width="1118" height="569" key="GridCell.Tab.2.center" timestamp="1615300976169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="569" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1614093992916" />
-    <state width="1118" height="569" key="GridCell.Tab.2.left" timestamp="1614093992916">
+    <state width="1118" height="569" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1615300976169" />
+    <state width="1118" height="569" key="GridCell.Tab.2.left" timestamp="1615300976169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="569" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1614093992916" />
-    <state width="1118" height="569" key="GridCell.Tab.2.right" timestamp="1614093992916">
+    <state width="1118" height="569" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1615300976169" />
+    <state width="1118" height="569" key="GridCell.Tab.2.right" timestamp="1615300976169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="569" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1614093992916" />
+    <state width="1118" height="569" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1615300976169" />
+    <state width="1118" height="569" key="GridCell.Tab.3.bottom" timestamp="1614940870875">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1118" height="569" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614940870875" />
+    <state width="1118" height="569" key="GridCell.Tab.3.center" timestamp="1614940870874">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1118" height="569" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1614940870874" />
+    <state width="1118" height="569" key="GridCell.Tab.3.left" timestamp="1614940870874">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1118" height="569" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1614940870874" />
+    <state width="1118" height="569" key="GridCell.Tab.3.right" timestamp="1614940870874">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1118" height="569" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1614940870874" />
     <state x="263" y="101" key="IDE.errors.dialog" timestamp="1612517185157">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="263" y="101" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1612517185157" />
-    <state x="186" y="9" key="SettingsEditor" timestamp="1613566224286">
+    <state x="213" y="22" key="Maven.ArtifactSearchDialog" timestamp="1614478135952">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="186" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1613566224286" />
-    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1613896047580">
+    <state x="213" y="22" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1614478135952" />
+    <state x="323" y="61" key="NewModule_or_Project.wizard" timestamp="1615260182133">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1613896047580" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1613618071000">
+    <state x="323" y="61" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1615260182133" />
+    <state x="186" y="0" key="SettingsEditor" timestamp="1614998612411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1613618071000" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1612918899887">
+    <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1614998612411" />
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1614762592222">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1612918899887" />
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1614762592222" />
+    <state x="57" y="68" key="new project wizard" timestamp="1614476213397">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="57" y="68" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1614476213397" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1615127859555">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1615127859555" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1615300847462">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1615300847462" />
   </component>
 </project>

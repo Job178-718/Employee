@@ -78,39 +78,43 @@ public class EmployeeController {
      * @param pn
      * @param model
      * @return
-     */
-    @ResponseBody
-    @RequestMapping(value = "/emp",method = RequestMethod.GET)
-    public State getMsg(@RequestParam(value = "pn",defaultValue = "1")Integer pn,Model model){
-        //@RequestParam(value = "pn",defaultValue = "1"),参数：pn与页面中的参数pn对应，默认第一页
-        //pn页码参数，6条数据；
-        PageHelper.startPage(pn,6);
+                */
+        @ResponseBody
+        @RequestMapping(value = "/emp",method = RequestMethod.GET)
+        public State getMsg(@RequestParam(value = "pn",defaultValue = "1")Integer pn,Model model){
+            //@RequestParam(value = "pn",defaultValue = "1"),参数：pn与页面中的参数pn对应，默认第一页
+            //pn页码参数，6条数据；
+            PageHelper.startPage(pn,6);
 
         List<Employee> emps = employeeService.getAll();
 
         //PageInfo封装了分页中的大部分信息
         PageInfo page = new PageInfo(emps,5);
-        //连续显示5页的数字 int[] page = {1,2,3,4,5}；
-//        return State.sucess().add("pageInfo",page);
+        //连续显示5页的数字 int[] page = {1,2,3,4,5};
         return State.sucess().add("pageInfo",page);
     }
+
     /**
      *
      * 查询员工列表（分页查询）
      * 返回完整页面
      * @return String
      */
-//    @RequestMapping("/emps")
+    // @RequestMapping("/emps")
     public String getEmp(@RequestParam(value = "pn",defaultValue = "1")Integer pn,
                          Model model){
         //@RequestParam(value = "pn",defaultValue = "1"),参数：pn与页面中的参数pn对应，默认第一页
-        //pn页码参数，5条数据；
+
+
+        //pn页码参数，5条数据,从第一页开始展示;
         PageHelper.startPage(pn,6);
 
         List<Employee> emps = employeeService.getAll();
 
         //PageInfo封装了分页中的大部分信息
         PageInfo page = new PageInfo(emps,5);
+        //获取数据后打包在一起，页面调用需要的数据展现出来；
+
         //连续显示5页的数字 int[] page = {1,2,3,4,5}；
         model.addAttribute("pageInfo", page);
         List<Employee> list = page.getList();

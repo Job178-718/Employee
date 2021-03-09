@@ -65,6 +65,7 @@ public class EmployeeExample {
         distinct = false;
     }
 
+    //内部类
     protected abstract static class GeneratedCriteria {
         protected List<Criterion> criteria;
 
@@ -92,6 +93,7 @@ public class EmployeeExample {
             criteria.add(new Criterion(condition));
         }
 
+        //添加内容,一个参数
         protected void addCriterion(String condition, Object value, String property) {
             if (value == null) {
                 throw new RuntimeException("Value for " + property + " cannot be null");
@@ -99,6 +101,7 @@ public class EmployeeExample {
             criteria.add(new Criterion(condition, value));
         }
 
+        //
         protected void addCriterion(String condition, Object value1, Object value2, String property) {
             if (value1 == null || value2 == null) {
                 throw new RuntimeException("Between values for " + property + " cannot be null");
@@ -176,6 +179,7 @@ public class EmployeeExample {
             return (Criteria) this;
         }
 
+        //检查emp_name结果
         public Criteria andEmpNameEqualTo(String value) {
             addCriterion("emp_name =", value, "empName");
             return (Criteria) this;
