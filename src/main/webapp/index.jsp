@@ -14,6 +14,7 @@
     <script type="text/javascript" src="${APP_PATH}/static/bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="${APP_PATH}/static/layui/layui.css">
     <script type="text/javascript" src="${APP_PATH}/static/layui/layui.css"></script>
+    <script type="text/javascript" src="${APP_PATH}/static/all/js/login.js"></script>
 </head>
 <body>
 
