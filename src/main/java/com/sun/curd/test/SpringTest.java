@@ -1,15 +1,13 @@
 package com.sun.curd.test;
 
-import com.sun.curd.bean.Department;
+import com.sun.curd.bean.Admin;
 import com.sun.curd.bean.Employee;
 import com.sun.curd.bean.EmployeeExample;
-import com.sun.curd.bean.Manager;
+import com.sun.curd.dao.AdminDao;
 import com.sun.curd.dao.DepartmentMapper;
 import com.sun.curd.dao.EmployeeMapper;
 
-import com.sun.curd.dao.ManagerMapper;
 import com.sun.curd.service.EmployeeService;
-import com.sun.curd.service.ManagerService;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,7 +18,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
-import java.util.Scanner;
 import java.util.UUID;
 
 /**
@@ -41,13 +38,14 @@ import java.util.UUID;
 public class SpringTest {
 
     @Autowired
+    AdminDao adminDao;
+
+    @Autowired
     EmployeeMapper employeeMapper;
 
     @Autowired
     DepartmentMapper departmentMapper;
 
-    @Autowired
-    ManagerService managerService;
 
     @Autowired
     SqlSession sqlSession;
@@ -127,10 +125,12 @@ public class SpringTest {
     }
 
     @Test
-    public void selectManager(){
-        //目的：通过username,password获取到数据库中的内容
-        managerService.getManager();
+    public void select(){
+        Admin admin = new Admin();
+        admin.setUsername("aaa");
+        admin.setPassword("aaa");
+        Admin admin1 = adminDao.queryAdmin(admin);
+        System.out.println(admin1);
     }
-
 
 }

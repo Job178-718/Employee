@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".dao.AdminDao">
+
+    <resultMap id="BaseResultMap" type=".entity.Admin">
+        <!--@Table admin-->
+        <result property="layId" column="lay_id" jdbcType="INTEGER"/>
+        <result property="username" column="username" jdbcType="VARCHAR"/>
+        <result property="password" column="password" jdbcType="VARCHAR"/>
+        <result property="sex" column="sex" jdbcType="INTEGER"/>
+        <result property="eMail" column="e_mail" jdbcType="VARCHAR"/>
+        <result property="createtime" column="createTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          lay_id, username, password, sex, e_mail, createTime
+        from ssm_curd.admin
+        where lay_id = #{layId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          lay_id, username, password, sex, e_mail, createTime
+        from ssm_curd.admin
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          lay_id, username, password, sex, e_mail, createTime
+        from ssm_curd.admin
+        <where>
+            <if test="layId != null">
+                and lay_id = #{layId}
+            </if>
+            <if test="username != null and username != ''">
+                and username = #{username}
+            </if>
+            <if test="password != null and password != ''">
+                and password = #{password}
+            </if>
+            <if test="sex != null">
+                and sex = #{sex}
+            </if>
+            <if test="eMail != null and eMail != ''">
+                and e_mail = #{eMail}
+            </if>
+            <if test="createtime != null">
+                and createTime = #{createtime}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="layId" useGeneratedKeys="true">
+        insert into ssm_curd.admin(username, password, sex, e_mail, createTime)
+        values (#{username}, #{password}, #{sex}, #{eMail}, #{createtime})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update ssm_curd.admin
+        <set>
+            <if test="username != null and username != ''">
+                username = #{username},
+            </if>
+            <if test="password != null and password != ''">
+                password = #{password},
+            </if>
+            <if test="sex != null">
+                sex = #{sex},
+            </if>
+            <if test="eMail != null and eMail != ''">
+                e_mail = #{eMail},
+            </if>
+            <if test="createtime != null">
+                createTime = #{createtime},
+            </if>
+        </set>
+        where lay_id = #{layId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from ssm_curd.admin where lay_id = #{layId}
+    </delete>
+
+</mapper>
