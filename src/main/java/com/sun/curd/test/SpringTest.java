@@ -133,4 +133,12 @@ public class SpringTest {
         System.out.println(admin1);
     }
 
+    @Test
+    public void getAll(){
+        List<Employee> all = employeeService.getAll();
+        for(Employee e:all ){
+            System.out.println(e);
+        }
+    }
+
 }

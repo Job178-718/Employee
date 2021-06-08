@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +20,28 @@ public class EmployeeController {
     @Autowired
     EmployeeService employeeService;
 
+
+    /**
+     * 将数据传递给后端
+     * @param pn
+     * @param model
+     * @return
+     */
+    @RequestMapping(value = "/employee",method = RequestMethod.GET)
+    public String getEmployee(@RequestParam(value = "pn",defaultValue = "1")Integer pn, Model model){
+       //@RequestParam(value = "pn",defaultValue = "1"),参数：pn与页面中的参数pn对应，默认第一页
+
+        PageHelper.startPage(pn,6);
+
+        List<Employee> emps = employeeService.getAll();
+
+        //PageInfo封装了分页中的大部分信息
+        PageInfo page = new PageInfo(emps,5);
+
+        model.addAttribute("pageInfo",page);
+
+        return "list";
+    }
 
     /**
      * 批量删除/单个删除都适用

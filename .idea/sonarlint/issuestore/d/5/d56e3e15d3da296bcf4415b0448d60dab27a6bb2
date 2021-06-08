@@ -1,0 +1,20 @@
+
+vjavascript:S3776À"TRefactor this function to reduce its Cognitive Complexity from 34 to the 15 allowed.(†æ¥ñúÿÿÿÿ
+bjavascript:S1121¦"@Extract the assignment of "this.container" from this expression.(Î– Òúÿÿÿÿ
+qjavascript:S3776à"TRefactor this function to reduce its Cognitive Complexity from 73 to the 15 allowed.(‡Á­
+qjavascript:S3776ç"TRefactor this function to reduce its Cognitive Complexity from 28 to the 15 allowed.(¦îÀ
+]javascript:S1121ç
+"@Extract the assignment of "this._cropMove" from this expression.(ˆÅÍ
+ajavascript:S1121è
+"?Extract the assignment of "this._cropEnd" from this expression.(ˆóÕ†üÿÿÿÿ
+[javascript:S1121ë
+">Extract the assignment of "this._resize" from this expression.(î©‚¼
+vjavascript:S3776ë"TRefactor this function to reduce its Cognitive Complexity from 20 to the 15 allowed.(«¬÷Ïûÿÿÿÿ
+vjavascript:S3776£"TRefactor this function to reduce its Cognitive Complexity from 19 to the 15 allowed.(’Œƒ»úÿÿÿÿ
+rjavascript:S3776é"URefactor this function to reduce its Cognitive Complexity from 192 to the 15 allowed.(â„ ³
+vjavascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 30 to the 15 allowed.( Ë‹¦ûÿÿÿÿ
+vjavascript:S3776³"TRefactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.(ˆ¬åÂşÿÿÿÿ
+qjavascript:S3776ã"TRefactor this function to reduce its Cognitive Complexity from 28 to the 15 allowed.(ˆÓ²Ê
+Rjavascript:S1117¡"0'canvas' is already declared in the upper scope.(âŒÓ÷úÿÿÿÿ
+Sjavascript:S1121©"6Extract the assignment of "data" from this expression.(üÁãí
+Qjavascript:S1121¬"4Extract the assignment of "fn" from this expression.(Œ¥üÉ

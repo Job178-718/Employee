@@ -1,75 +1,42 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%
-    pageContext.setAttribute("APP_PATH",request.getContextPath());
-%>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta chatset="UTF-8">
-    <title>登录</title>
+    <meta charset="UTF-8" />
+    <title>请登录</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/all/css/login.css" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <script src="${pageContext.request.contextPath}/static/all/js/login.js"></script>
     <style type="text/css">
-        #login-box {
-            border: 1px solid blue;
-            width: 30%;
-            text-align: center;
-            margin: 0 auto;
-            margin-top: 15%;
-            background: #BCCCE5;
-            padding: 20px 50px;
-        }
-        #login-box h1 {
-            color: white;
-        }
-
-        #login-box .form .item input {
-            width: 200px; /* 设置合适的宽度 */
-            border: 0; /* 首先将边界取消，方便下面修改下部边界宽度 */
-            border-bottom: 5px solid white; /* 将下边界进行修改，显示出横线效果 */
-            font-size: 18px; /* 将字体适当的变大加粗 */
-            background: #ffffff00; /* 将输入框设置为透明 */
-            color: white; /* 上面的文本颜色设置为白色，但是placeholder的颜色要单独设置 */
-            padding: 5px 10px; /* 为了placeholder的内容不是顶格显示，增加内部边界 */
-        }
-
-        #login-box .form .item i {
-            color: white;
-            font-size: 18px;
-        }
-
         body {
-            background-image: url(${APP_PATH}/webapp/WEB-INF/img/0558.jpg);
-            background-size: 100% auto;
+            background-image: url('${pageContext.request.contextPath}/static/img/0287.jpg');
             background-repeat: no-repeat;
-        }
-
-        #login{
-            height: 30px;
-            width: 50px;
-            margin-top: 10px;
-            border-radius: 5px;
-            background-color: aquamarine;
+            background-size: 100% auto;
         }
     </style>
 </head>
+
 <body>
-<form action="${pageContext.request.contextPath}/admin/login" method="POST">
-    <div id="login-box">
-        <h1>Login</h1> <!-- Login的大标题 -->
-        <div class="form">
-            <div class="item"> <!-- username部分 -->
-                <i></i> <!-- 将来用来绘制username前面的图标 -->
-                <input type="text" placeholder="username" name="username">
-                <!-- 用文本框实现的username的输入 -->
+<div id="Login-box">
+    <h2 style="color: #fff;">请登录</h2>
+    <div class="form">
+        <form action="${pageContext.request.contextPath}/admin/login" method="POST">
+            <div class="item">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <input type="text" placeholder="Username" name="username" />
             </div>
-            <div class="item"><!-- password部分 -->
-                <i></i> <!-- 将来用来绘制password前面的图标 -->
-                <input type="password" placeholder="password" name="password">
-                <!-- 用password文本框实现的密码输入 -->
+            <div class="item">
+                <i class="fa fa-key" aria-hidden="true"></i>
+                <input type="password" placeholder="Password" name="password" />
             </div>
-        </div>
-        <button type="submit" id="login">Login</button>
-        <!-- 用button实现的Login登陆按钮 -->
+            <button type="submit">Login</button>
+        </form>
     </div>
-</form>
+    <div id="Register">
+        <pre><a href="">注册</a></pre>
+    </div>
+</div>
 </body>
 </html>
+
 

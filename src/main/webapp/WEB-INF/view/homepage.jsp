@@ -11,7 +11,7 @@
     <title>员工列表</title>
     <script type="text/javascript" src="${APP_PATH}/static/js/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" href="${APP_PATH}/static/bootstrap/css/bootstrap.min.css">
-    <script type="text/javascript" src="${APP_PATH}/static/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="${APP_PATH}/static/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="${APP_PATH}/static/layui/layui.css">
     <script type="text/javascript" src="${APP_PATH}/static/layui/layui.css"></script>
     <script type="text/javascript" src="${APP_PATH}/static/all/js/login.js"></script>

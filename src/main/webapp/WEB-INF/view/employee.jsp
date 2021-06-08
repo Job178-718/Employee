@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="${APP_PATH}/static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="${APP_PATH}/static/layui/css/layui.css">
     <script type="text/javascript" src="${APP_PATH}/static/js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="${APP_PATH}/static/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="${APP_PATH}/static/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="${APP_PATH}/static/layui/js/layui.js"></script>
 </head>
 <body class="layui-layout-body">
@@ -650,9 +650,6 @@
         var del = $("#check_all").prop("checked",false);
     }
 
-    layui.use('element', function(){
-        var element = layui.element;
-    });
 </script>
 </body>
 </html>

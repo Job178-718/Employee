@@ -1160,67 +1160,72 @@
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="292" parent="283" name="PRIMARY">
+    <column id="292" parent="283" name="nickname">
+      <Position>7</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="293" parent="283" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>lay_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="293" parent="284" name="emp_id">
+    <column id="294" parent="284" name="emp_id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="294" parent="284" name="emp_name">
+    <column id="295" parent="284" name="emp_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="295" parent="284" name="gender">
+    <column id="296" parent="284" name="gender">
       <Position>3</Position>
       <DataType>char(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="296" parent="284" name="email">
+    <column id="297" parent="284" name="email">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="297" parent="284" name="d_id">
+    <column id="298" parent="284" name="d_id">
       <Position>5</Position>
       <DataType>int|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="298" parent="284" name="fk_emp_dept">
+    <index id="299" parent="284" name="fk_emp_dept">
       <ColNames>d_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="299" parent="284" name="PRIMARY">
+    <key id="300" parent="284" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>emp_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="300" parent="284" name="fk_emp_dept">
+    <foreign-key id="301" parent="284" name="fk_emp_dept">
       <ColNames>d_id</ColNames>
       <RefTableName>tnl_dept</RefTableName>
       <RefColNames>dept_id</RefColNames>
     </foreign-key>
-    <column id="301" parent="285" name="dept_id">
+    <column id="302" parent="285" name="dept_id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="302" parent="285" name="dept_name">
+    <column id="303" parent="285" name="dept_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="303" parent="285" name="PRIMARY">
+    <key id="304" parent="285" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>dept_id</ColNames>
       <Primary>1</Primary>
