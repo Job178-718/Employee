@@ -28,8 +28,13 @@
             <mvc:mapping path="/**"/>
             <mvc:exclude-mapping path="/admin/login"/>
             <mvc:exclude-mapping path="/static/**"/>
-            <mvc:exclude-mapping path="/employee"/>
+            <mvc:exclude-mapping path="/depts/**"/>
+            <mvc:exclude-mapping path="/em/**"/>
             <bean class="com.sun.curd.Interceptor.IntegerAdmin"></bean>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/admin/singnOut"/>
+            <bean class="com.sun.curd.Interceptor.InterceptorSignOut"></bean>
         </mvc:interceptor>
     </mvc:interceptors>
 

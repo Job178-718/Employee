@@ -9,12 +9,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Controller
+@RequestMapping("/em")
 public class EmployeeController {
 
     @Autowired
@@ -40,7 +40,7 @@ public class EmployeeController {
 
         model.addAttribute("pageInfo",page);
 
-        return "list";
+        return "admin/list";
     }
 
     /**
@@ -51,8 +51,10 @@ public class EmployeeController {
     @ResponseBody
     @RequestMapping(value = "/emp/{ids}",method = RequestMethod.DELETE)
     public State deleteEmpById(@PathVariable(value = "ids")String ids){
+        System.out.println("进入删除选项！");
         if (ids.contains("-")){
             //批量删除
+            System.out.println("批量删除");
             List<Integer> ids_list = new ArrayList<Integer>();
 
             String[] id_empId = ids.split("-");
@@ -62,6 +64,7 @@ public class EmployeeController {
             employeeService.deleteBath(ids_list);
         }else {
             //单个删除
+            System.out.println("单个删除");
             Integer id = Integer.parseInt(ids);
             employeeService.deleteEmp(id);
         }

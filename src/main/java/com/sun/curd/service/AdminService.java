@@ -22,4 +22,18 @@ public class AdminService {
         admin.setPassword(password);
         return adminDao.queryAdmin(admin);
     }
+
+    /**
+     * 更新页面
+     * @param path
+     * @param id
+     * @return
+     */
+    public Integer uploadImg(Integer id,String path){
+        Admin admin = new Admin();
+        admin.setImgPath(path);
+        admin.setLayId(id);
+        int update = adminDao.update(admin);
+        return update;
+    }
 }

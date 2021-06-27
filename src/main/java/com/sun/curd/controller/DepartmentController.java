@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 @Controller
+@RequestMapping("/depts")
 public class DepartmentController {
 
     @Autowired
@@ -22,7 +23,7 @@ public class DepartmentController {
      * @return State
      */
     @ResponseBody
-    @RequestMapping("/depts")
+    @RequestMapping("/getDepts")
     public State getDepts(){
         List<Department> list = departmentService.getDepts();
         return State.sucess().add("depts",list);

@@ -27,6 +27,16 @@ public class Admin implements Serializable {
 
     private String nickName;
 
+    private String imgPath;
+
+    public String getImgPath() {
+        return imgPath;
+    }
+
+    public void setImgPath(String imgPath) {
+        this.imgPath = imgPath;
+    }
+
     public String getNickName() {
         return nickName;
     }
@@ -93,6 +103,7 @@ public class Admin implements Serializable {
                 ", eMail='" + eMail + '\'' +
                 ", createtime=" + createtime +
                 ", nickName='" + nickName + '\'' +
+                ", imgPath='" + imgPath + '\'' +
                 '}';
     }
 }

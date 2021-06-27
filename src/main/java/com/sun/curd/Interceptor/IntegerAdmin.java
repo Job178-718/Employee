@@ -13,6 +13,6 @@ public class IntegerAdmin extends HandlerInterceptorAdapter {
             response.sendRedirect(request.getContextPath()+"/admin/login");
             return false;
         }
-        return false;
+        return true;
     }
 }

@@ -1,0 +1,13 @@
+
+E
+java:S3740<"/Provide the parametrized type for this generic.(ñ„ÉÄ
+P
+java:S1191"5Use classes from the Java API instead of Sun classes.(Ç°Ø—ûÿÿÿÿ
+M	java:S1060"9Replace this use of System.out or System.err by a logger.(ñáÉ*
+N	java:S106="9Replace this use of System.out or System.err by a logger.(†ËÜ§
+S	java:S106>"9Replace this use of System.out or System.err by a logger.(Þž´Ýùÿÿÿÿ
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(€ÑŠ¼ùÿÿÿÿ
+N	java:S106@"9Replace this use of System.out or System.err by a logger.(òº¾þ
+N	java:S106C"9Replace this use of System.out or System.err by a logger.(† ×´
+S	java:S106F"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+S	java:S106J"9Replace this use of System.out or System.err by a logger.(¤÷¨Ìÿÿÿÿÿ

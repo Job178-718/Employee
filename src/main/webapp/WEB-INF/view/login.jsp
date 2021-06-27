@@ -9,7 +9,7 @@
     <script src="${pageContext.request.contextPath}/static/all/js/login.js"></script>
     <style type="text/css">
         body {
-            background-image: url('${pageContext.request.contextPath}/static/img/0287.jpg');
+            background-image: url('${pageContext.request.contextPath}/static/img/0555.jpg');
             background-repeat: no-repeat;
             background-size: 100% auto;
         }
@@ -23,17 +23,17 @@
         <form action="${pageContext.request.contextPath}/admin/login" method="POST">
             <div class="item">
                 <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                <input type="text" placeholder="Username" name="username" />
+                <input type="text" placeholder="Username" name="username" value="aaa"/>
             </div>
             <div class="item">
                 <i class="fa fa-key" aria-hidden="true"></i>
-                <input type="password" placeholder="Password" name="password" />
+                <input type="password" placeholder="Password" name="password" value="aaa"/>
             </div>
             <button type="submit">Login</button>
         </form>
     </div>
     <div id="Register">
-        <pre><a href="">注册</a></pre>
+        <pre><a href="${pageContext.request.contextPath}/">注册</a></pre>
     </div>
 </div>
 </body>

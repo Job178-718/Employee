@@ -42,8 +42,8 @@
                 <div class="clearfix"></div>
                 <div class="profile clearfix">
                     <div class="profile_pic">
-                        <img src="<c:if test="${empty sessionScope.user.headImg}">${pageContext.request.contextPath}/statics/images/img.jpg</c:if>
-                        <c:if test="${not empty sessionScope.user.headImg}">${pageContext.request.contextPath}/statics/images/userhead/${sessionScope.user.headImg}</c:if>" alt="..." class="img-circle profile_img">
+                        <img src="<c:if test="${empty sessionScope.admin.imgPath}">${pageContext.request.contextPath}/static/img/0287.jpg</c:if>
+                                    <c:if test="${not empty sessionScope.admin.imgPath}">${pageContext.request.contextPath}/upload/${sessionScope.admin.imgPath}</c:if>" alt="用户头像" style="width:40px;height: 40px;margin-top: 20px;margin-left: 30px;border-radius: 50px">
                     </div>
                     <div class="profile_info">
                         <span>欢迎登录，
@@ -58,15 +58,14 @@
                         <ul class="nav side-menu">
                             <li><a><i class="fa fa-home"></i> 我的信息 <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="${pageContext.request.contextPath}/user/profile/">个人主页</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/admin/personal">个人主页</a></li>
                                     <li><a href="${pageContext.request.contextPath}/user/head.html">修改头像</a></li>
                                     <li><a href="index2.html">我的通知</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-id-card"></i> 员工管理<span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="${pageContext.request.contextPath}">查找员工</a></li>
-                                    <li><a href="${pageContext.request.contextPath}/employee">员工一览表</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/em/employee">员工信息</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -82,7 +81,7 @@
                     <a data-toggle="tooltip" data-placement="top" title="Lock">
                         <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
                     </a>
-                    <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                    <a data-toggle="tooltip" data-placement="top" title="Logout" href="${pageContext.request.contextPath}/admin/singnOut">
                         <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
                     </a>
                 </div>
@@ -97,15 +96,14 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="">
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                <img src="<c:if test="${empty sessionScope.user.headImg}">${pageContext.request.contextPath}/statics/images/img.jpg</c:if>
-                                <c:if test="${not empty sessionScope.user.headImg}">${pageContext.request.contextPath}/statics/images/userhead/${sessionScope.user.headImg}</c:if>" alt=""><c:if test="${empty sessionScope.user.nickName}">${sessionScope.user.loginMail}</c:if>
-                                <c:if test="${not empty sessionScope.user.nickName}">${sessionScope.user.nickName}</c:if>
+                                <img src="<c:if test="${empty sessionScope.admin.imgPath}">${pageContext.request.contextPath}/static/img/0287.jpg</c:if>
+                                    <c:if test="${not empty sessionScope.admin.imgPath}">${pageContext.request.contextPath}/upload/${sessionScope.admin.imgPath}</c:if>" alt="用户头像">
                                 <span class=" fa fa-angle-down"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-usermenu pull-right">
-                                <li><a href="${pageContext.request.contextPath}/user/profile/"> 个人主页</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/personal"> 个人主页</a></li>
                                 <li><a href="javascript:;">修改密码</a></li>
-                                <li><a href="${pageContext.request.contextPath}/logout.html"><i class="fa fa-sign-out pull-right"></i> 登出</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/singnOut"><i class="fa fa-sign-out pull-right"></i> 登出</a></li>
                             </ul>
                         </li>
                         <li role="presentation" class="dropdown">
@@ -116,7 +114,7 @@
                             <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                                 <li>
                                     <a>
-                                        <span class="image"><img src="${pageContext.request.contextPath}/statics/images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="${pageContext.request.contextPath}" alt="Profile Image" /></span>
                                         <span>
                                             <span>John Smith</span>
                                             <span class="time">3 mins ago</span>
@@ -128,7 +126,7 @@
                                 </li>
                                 <li>
                                     <a>
-                                        <span class="image"><img src="${pageContext.request.contextPath}/statics/images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="${pageContext.request.contextPath}" alt="Profile Image" /></span>
                                         <span>
                                           <span>John Smith</span>
                                           <span class="time">3 mins ago</span>
@@ -140,7 +138,7 @@
                                 </li>
                                 <li>
                                     <a>
-                                        <span class="image"><img src="${pageContext.request.contextPath}/statics/images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="${pageContext.request.contextPath}" alt="Profile Image" /></span>
                                         <span>
                                             <span>John Smith</span>
                                             <span class="time">3 mins ago</span>
@@ -152,7 +150,7 @@
                                 </li>
                                 <li>
                                     <a>
-                                        <span class="image"><img src="${pageContext.request.contextPath}/statics/images/img.jpg" alt="Profile Image" /></span>
+                                        <span class="image"><img src="${pageContext.request.contextPath}" alt="Profile Image" /></span>
                                         <span>
                                         <span>John Smith</span>
                                         <span class="time">3 mins ago</span>
