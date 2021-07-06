@@ -141,4 +141,10 @@ public class SpringTest {
         }
     }
 
+    @Test
+    public void queryById(){
+        Admin admin = adminDao.queryById(1);
+        System.out.println(admin);
+    }
+
 }

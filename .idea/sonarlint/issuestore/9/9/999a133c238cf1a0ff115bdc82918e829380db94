@@ -1,0 +1,21 @@
+
+P
+java:S1191"5Use classes from the Java API instead of Sun classes.(˜°ˆÊúÿÿÿÿ
+w
+java:S1488-"aImmediately return this expression instead of assigning it to the temporary variable "employees".(­øèæ
+v
+java:S1488?"`Immediately return this expression instead of assigning it to the temporary variable "employee".(õ‘›Ã
+l
+java:S1128	"QRemove this unused import 'org.springframework.web.bind.annotation.PathVariable'.(¹ûñÅþÿÿÿÿ
+O
+java:S1128"4Remove this unused import 'com.sun.curd.bean.State'.(ëÇà¡üÿÿÿÿ
+i
+java:S1128
+"SRemove this unused import 'org.springframework.web.bind.annotation.RequestMapping'.(ö»¿ë
+m
+java:S1128"RRemove this unused import 'org.springframework.web.bind.annotation.RequestMethod'.(Ê™Ðÿûÿÿÿÿ
+l
+java:S1128"QRemove this unused import 'org.springframework.web.bind.annotation.ResponseBody'.(•¶¶êøÿÿÿÿ
+Q	java:S125,"<This block of commented-out lines of code should be removed.(Ñà—Õ
+U	java:S106Q"9Replace this use of System.out or System.err by a logger.(å¨˜Â8ýæÀÐ¦/
+Z	java:S106]"9Replace this use of System.out or System.err by a logger.(¢ŒÆüÿÿÿÿ8å¡ÂÐ¦/

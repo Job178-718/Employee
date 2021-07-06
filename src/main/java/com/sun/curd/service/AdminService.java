@@ -36,4 +36,9 @@ public class AdminService {
         int update = adminDao.update(admin);
         return update;
     }
+
+    public Admin queryById(Integer id){
+        Admin admin = adminDao.queryById(id);
+        return admin;
+    }
 }

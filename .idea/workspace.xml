@@ -57,8 +57,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="spring-beans.schema" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -93,17 +93,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="js.last.introduce.type" value="VAR" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="service.view.auto.scroll.from.source" value="true" />
     <property name="service.view.auto.scroll.to.source" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.sun.curd.service" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\VStoGithub\CURD\CURD\src\main\webapp\WEB-INF\view\admin" />
+      <recent name="F:\VStoGithub\CURD\CURD\src\main\webapp\static\all\js" />
+      <recent name="F:\VStoGithub\CURD\CURD\src\main\webapp\static" />
+      <recent name="F:\VStoGithub\CURD\CURD\src\main\webapp\static\font-awesome\css" />
+      <recent name="F:\VStoGithub\CURD\CURD\src\main\webapp\static\css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\VStoGithub\CURD\CURD\src\main\webapp\WEB-INF\view\admin" />
@@ -112,30 +118,13 @@
       <recent name="F:\VStoGithub\CURD\CURD\src\main\webapp\static\font-awesome\scss" />
       <recent name="F:\VStoGithub\CURD\CURD\src\main\webapp\static\font-awesome\css" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\VStoGithub\CURD\CURD\src\main\webapp\WEB-INF\view\admin" />
-      <recent name="F:\VStoGithub\CURD\CURD\src\main\webapp\static\all\js" />
-      <recent name="F:\VStoGithub\CURD\CURD\src\main\webapp\static" />
-      <recent name="F:\VStoGithub\CURD\CURD\src\main\webapp\static\font-awesome\css" />
-      <recent name="F:\VStoGithub\CURD\CURD\src\main\webapp\static\css" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.sun.curd.service" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat">
     <configuration name="Equal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sun.test01.Equal" />
-      <module name="GetPicture" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sun.test01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GeneralClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sun.test01.GeneralClass" />
       <module name="GetPicture" />
       <extension name="coverage">
         <pattern>
@@ -174,6 +163,22 @@
       <option name="PACKAGE_NAME" value="com.sun.curd.test" />
       <option name="MAIN_CLASS_NAME" value="com.sun.curd.test.SpringTest" />
       <option name="METHOD_NAME" value="getAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringTest.queryById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CURD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sun.curd.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sun.curd.test" />
+      <option name="MAIN_CLASS_NAME" value="com.sun.curd.test.SpringTest" />
+      <option name="METHOD_NAME" value="queryById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -243,8 +248,9 @@
       </method>
     </configuration>
     <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.1061" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
         <artifact name="CURD:war exploded">
           <settings>
@@ -254,7 +260,8 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Tomcat_7_0_1061_SSM_CURD" />
-        <option name="JNDI_PORT" value="1090" />
+        <option name="HTTP_PORT" value="8081" />
+        <option name="JNDI_PORT" value="1080" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -427,19 +434,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Equal" />
-      <item itemvalue="Application.GeneralClass" />
       <item itemvalue="JUnit.SpringTest.select" />
       <item itemvalue="JUnit.SpringTest.getAll" />
       <item itemvalue="JUnit.MvcTest.testMvc" />
+      <item itemvalue="JUnit.SpringTest.queryById" />
       <item itemvalue="Tomcat Server.Tomcat" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpringTest.queryById" />
         <item itemvalue="JUnit.SpringTest.select" />
         <item itemvalue="JUnit.MvcTest.testMvc" />
         <item itemvalue="JUnit.SpringTest.getAll" />
         <item itemvalue="Application.Equal" />
-        <item itemvalue="Application.GeneralClass" />
       </list>
     </recent_temporary>
   </component>
@@ -522,7 +529,12 @@
       <workItem from="1624185975590" duration="993000" />
       <workItem from="1624673927278" duration="3399000" />
       <workItem from="1624681007819" duration="18751000" />
-      <workItem from="1624781333383" duration="246000" />
+      <workItem from="1624781333383" duration="8633000" />
+      <workItem from="1624963267545" duration="7034000" />
+      <workItem from="1625046443630" duration="13696000" />
+      <workItem from="1625138797524" duration="5857000" />
+      <workItem from="1625365004332" duration="11855000" />
+      <workItem from="1625401396865" duration="1808000" />
     </task>
     <servers />
   </component>
@@ -538,18 +550,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Template_Data_Languages/0.0.1366.728@0.0.1366.728" timestamp="1623035346790" />
-    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624183306888">
+    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625047218106">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1624183306888" />
+    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1625047218106" />
     <state x="354" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1623038984015">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="354" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1623038984015" />
-    <state x="488" y="57" key="#com.intellij.ide.util.MemberChooser" timestamp="1623462790153">
+    <state x="488" y="57" key="#com.intellij.ide.util.MemberChooser" timestamp="1625051463081">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1623462790153" />
+    <state x="488" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1625051463081" />
     <state x="413" y="139" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1622451818667">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -566,70 +578,70 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1623321927301" />
-    <state width="1322" height="570" key="GridCell.Tab.0.bottom" timestamp="1624724176114">
+    <state width="1118" height="211" key="GridCell.Tab.0.bottom" timestamp="1625399124820">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="570" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1624724176114" />
-    <state width="1322" height="570" key="GridCell.Tab.0.center" timestamp="1624724176114">
+    <state width="1118" height="211" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1625399124820" />
+    <state width="1118" height="211" key="GridCell.Tab.0.center" timestamp="1625399124820">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="570" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1624724176114" />
-    <state width="1322" height="570" key="GridCell.Tab.0.left" timestamp="1624724176114">
+    <state width="1118" height="211" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1625399124820" />
+    <state width="1118" height="211" key="GridCell.Tab.0.left" timestamp="1625399124820">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="570" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1624724176114" />
-    <state width="1322" height="570" key="GridCell.Tab.0.right" timestamp="1624724176114">
+    <state width="1118" height="211" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1625399124820" />
+    <state width="1118" height="211" key="GridCell.Tab.0.right" timestamp="1625399124820">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="570" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1624724176114" />
-    <state width="1118" height="229" key="GridCell.Tab.1.bottom" timestamp="1624724176112">
+    <state width="1118" height="211" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1625399124820" />
+    <state width="1118" height="211" key="GridCell.Tab.1.bottom" timestamp="1625399124820">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="229" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1624724176112" />
-    <state width="1118" height="229" key="GridCell.Tab.1.center" timestamp="1624724176112">
+    <state width="1118" height="211" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1625399124820" />
+    <state width="1118" height="211" key="GridCell.Tab.1.center" timestamp="1625399124820">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="229" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1624724176112" />
-    <state width="1118" height="229" key="GridCell.Tab.1.left" timestamp="1624724176112">
+    <state width="1118" height="211" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1625399124820" />
+    <state width="1118" height="211" key="GridCell.Tab.1.left" timestamp="1625399124820">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="229" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1624724176112" />
-    <state width="1118" height="229" key="GridCell.Tab.1.right" timestamp="1624724176112">
+    <state width="1118" height="211" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1625399124820" />
+    <state width="1118" height="211" key="GridCell.Tab.1.right" timestamp="1625399124820">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="229" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1624724176112" />
-    <state width="1118" height="229" key="GridCell.Tab.2.bottom" timestamp="1624724176112">
+    <state width="1118" height="211" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1625399124820" />
+    <state width="1118" height="211" key="GridCell.Tab.2.bottom" timestamp="1625399124820">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="229" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1624724176112" />
-    <state width="1118" height="229" key="GridCell.Tab.2.center" timestamp="1624724176112">
+    <state width="1118" height="211" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1625399124820" />
+    <state width="1118" height="211" key="GridCell.Tab.2.center" timestamp="1625399124820">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="229" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1624724176112" />
-    <state width="1118" height="229" key="GridCell.Tab.2.left" timestamp="1624724176112">
+    <state width="1118" height="211" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1625399124820" />
+    <state width="1118" height="211" key="GridCell.Tab.2.left" timestamp="1625399124820">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="229" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1624724176112" />
-    <state width="1118" height="229" key="GridCell.Tab.2.right" timestamp="1624724176112">
+    <state width="1118" height="211" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1625399124820" />
+    <state width="1118" height="211" key="GridCell.Tab.2.right" timestamp="1625399124820">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="229" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1624724176112" />
-    <state width="1118" height="323" key="GridCell.Tab.3.bottom" timestamp="1624698206295">
+    <state width="1118" height="211" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1625399124820" />
+    <state width="1118" height="347" key="GridCell.Tab.3.bottom" timestamp="1624979149067">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="323" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1624698206295" />
-    <state width="1118" height="323" key="GridCell.Tab.3.center" timestamp="1624698206295">
+    <state width="1118" height="347" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1624979149067" />
+    <state width="1118" height="347" key="GridCell.Tab.3.center" timestamp="1624979149067">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="323" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1624698206295" />
-    <state width="1118" height="323" key="GridCell.Tab.3.left" timestamp="1624698206295">
+    <state width="1118" height="347" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1624979149067" />
+    <state width="1118" height="347" key="GridCell.Tab.3.left" timestamp="1624979149067">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="323" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1624698206295" />
-    <state width="1118" height="323" key="GridCell.Tab.3.right" timestamp="1624698206295">
+    <state width="1118" height="347" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1624979149067" />
+    <state width="1118" height="347" key="GridCell.Tab.3.right" timestamp="1624979149067">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1118" height="323" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1624698206295" />
+    <state width="1118" height="347" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1624979149067" />
     <state width="1118" height="289" key="GridCell.Tab.4.bottom" timestamp="1624675170214">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -646,6 +658,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1118" height="289" key="GridCell.Tab.4.right/0.0.1366.728@0.0.1366.728" timestamp="1624675170214" />
+    <state width="1118" height="211" key="GridCell.Tab.5.bottom" timestamp="1625046561162">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1118" height="211" key="GridCell.Tab.5.bottom/0.0.1366.728@0.0.1366.728" timestamp="1625046561162" />
+    <state width="1118" height="211" key="GridCell.Tab.5.center" timestamp="1625046561162">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1118" height="211" key="GridCell.Tab.5.center/0.0.1366.728@0.0.1366.728" timestamp="1625046561162" />
+    <state width="1118" height="211" key="GridCell.Tab.5.left" timestamp="1625046561161">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1118" height="211" key="GridCell.Tab.5.left/0.0.1366.728@0.0.1366.728" timestamp="1625046561161" />
+    <state width="1118" height="211" key="GridCell.Tab.5.right" timestamp="1625046561162">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1118" height="211" key="GridCell.Tab.5.right/0.0.1366.728@0.0.1366.728" timestamp="1625046561162" />
     <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1622451195627">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -658,6 +686,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="531" y="85" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1366.728@0.0.1366.728" timestamp="1622450850212" />
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1625048387444">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1625048387444" />
     <state x="253" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1623036192866">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

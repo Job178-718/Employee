@@ -61,6 +61,7 @@ public class EmployeeController {
             for(String id : id_empId){
                 ids_list.add(Integer.parseInt(id));
             }
+
             employeeService.deleteBath(ids_list);
         }else {
             //单个删除
@@ -70,6 +71,7 @@ public class EmployeeController {
         }
         return State.sucess();
     }
+
     /**
      * 员工更新方法；
      * @param employee

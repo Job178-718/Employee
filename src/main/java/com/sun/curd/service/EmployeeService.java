@@ -18,8 +18,6 @@ public class EmployeeService {
     @Autowired
     EmployeeMapper employeeMapper;
 
-
-
     /**
      *  查询员工是否重复；
      * @param empName
@@ -80,6 +78,7 @@ public class EmployeeService {
      */
     public void deleteEmp(Integer id) {
         employeeMapper.deleteByPrimaryKey(id);
+        System.out.println("deleteById...");
     }
 
     /**
@@ -91,5 +90,6 @@ public class EmployeeService {
         EmployeeExample.Criteria criteria = employeeExample.createCriteria();
         criteria.andEmpIdIn(ids);
         employeeMapper.deleteByExample(employeeExample);
+        System.out.println("oneByOne");
     }
 }
