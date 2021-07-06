@@ -25,7 +25,7 @@
        	password varchar(255) not null,
        	sex int(2),
        	e_mail varchar(255),
-         createTime timestamp	
+         createTime timestamp
        );
        ```
 
