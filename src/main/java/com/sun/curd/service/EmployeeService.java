@@ -90,6 +90,13 @@ public class EmployeeService {
         EmployeeExample.Criteria criteria = employeeExample.createCriteria();
         criteria.andEmpIdIn(ids);
         employeeMapper.deleteByExample(employeeExample);
-        System.out.println("oneByOne");
     }
+
+    public List<Employee> selectByname(String name){
+        Employee employee = new Employee();
+        employee.setEmpName(name);
+        List<Employee> employees = employeeMapper.selectByLike(employee);
+        return employees;
+    }
+
 }

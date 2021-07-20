@@ -4,7 +4,7 @@
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-md-4 col-md-offset-6">
+        <div class="col-md-6" style="float: left">
           <h2>个人信息</h2>
         </div>
     </div>
@@ -14,7 +14,7 @@
         <%--图片上传只能采用post--%>
         <form id="uploadImg" enctype="multipart/form-data" action="##">
             <div class="container">
-                <h2>图片上传</h2>
+                <h2>用户图片</h2>
                 <div class="file-loading">
                     <a>
                         <input type="file" name="file" />
@@ -54,7 +54,7 @@
                     select();
                 },
                 error:function(){
-                    alert("erro");
+                    alert("error");
                 }
             });
         }

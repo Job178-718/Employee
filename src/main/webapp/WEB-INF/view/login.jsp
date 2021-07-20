@@ -1,3 +1,5 @@
+<%@ taglib prefix="if" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -20,14 +22,19 @@
 <div id="Login-box">
     <h2 style="color: #fff;">请登录</h2>
     <div class="form">
-        <form action="${pageContext.request.contextPath}/admin/login" method="POST">
+        <form action="${pageContext.request.contextPath}/admin/main" method="POST">
+            <div class="item">
+                <c:if test="not empty ${msg}">
+                   <label style="color:red" title="${msg}"/>
+                </c:if>
+            </div>
             <div class="item">
                 <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                 <input type="text" placeholder="Username" name="username" value="aaa"/>
             </div>
             <div class="item">
                 <i class="fa fa-key" aria-hidden="true"></i>
-                <input type="password" placeholder="Password" name="password" value="aaa"/>
+                <input type="password" placeholder="Password" name="password"/>
             </div>
             <button type="submit">Login</button>
         </form>

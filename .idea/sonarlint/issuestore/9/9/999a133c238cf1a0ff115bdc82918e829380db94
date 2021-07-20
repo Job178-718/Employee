@@ -5,6 +5,8 @@ w
 java:S1488-"aImmediately return this expression instead of assigning it to the temporary variable "employees".(­øèæ
 v
 java:S1488?"`Immediately return this expression instead of assigning it to the temporary variable "employee".(õ‘›Ã
+|
+java:S1488b"aImmediately return this expression instead of assigning it to the temporary variable "employees".(¼øææýÿÿÿÿ
 l
 java:S1128	"QRemove this unused import 'org.springframework.web.bind.annotation.PathVariable'.(¹ûñÅþÿÿÿÿ
 O
@@ -17,5 +19,4 @@ java:S1128"RRemove this unused import 'org.springframework.web.bind.annotation
 l
 java:S1128"QRemove this unused import 'org.springframework.web.bind.annotation.ResponseBody'.(•¶¶êøÿÿÿÿ
 Q	java:S125,"<This block of commented-out lines of code should be removed.(Ñà—Õ
-U	java:S106Q"9Replace this use of System.out or System.err by a logger.(å¨˜Â8ýæÀÐ¦/
-Z	java:S106]"9Replace this use of System.out or System.err by a logger.(¢ŒÆüÿÿÿÿ8å¡ÂÐ¦/
+N	java:S106Q"9Replace this use of System.out or System.err by a logger.(å¨˜Â

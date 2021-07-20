@@ -5,6 +5,7 @@ import com.sun.curd.bean.State;
 import com.sun.curd.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
@@ -25,13 +26,15 @@ public class AdminController {
         return "login";
     }
 
-    @PostMapping("/login")
-    public String loginMange(String username, String password, HttpSession session){
+    @PostMapping("/main")
+    public String loginMange(String username, String password, HttpSession session, Model model){
+        System.out.println("登录");
         Admin login = adminService.login(username, password);
         if(login!=null){
             session.setAttribute("admin",login);
             return "admin/main";
         }
+        model.addAttribute("msg","密码或者账号错误");
         return "login";
     }
 
@@ -136,6 +139,11 @@ public class AdminController {
         Integer id = admin.getLayId();
         adminService.uploadImg(id,uploadFilename);
         return "/admin/upload";
+    }
+
+    @GetMapping("/select.html")
+    public String selectByQuite(){
+        return "admin/find";
     }
 
 

@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="600"/>
     <title>员工管理系统</title>
     <link href="${pageContext.request.contextPath}/static/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -37,7 +38,7 @@
         <div class="col-md-3 left_col menu_fixed">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="index.html" class="site_title"><i class="fa fa-users"></i> <span>员工管理系统</span></a>
+                    <a class="site_title"><span>员工管理系统</span></a>
                 </div>
                 <div class="clearfix"></div>
                 <div class="profile clearfix">
@@ -65,6 +66,7 @@
                             </li>
                             <li><a><i class="fa fa-id-card"></i> 员工管理<span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
+                                    <li><a href="${pageContext.request.contextPath}/admin/select.html">快速查找</a></li>
                                     <li><a href="${pageContext.request.contextPath}/em/employee">员工信息</a></li>
                                 </ul>
                             </li>
@@ -144,3 +146,5 @@
                 </div>
                 <div class="clearfix"></div>
                 <div class="row">
+
+

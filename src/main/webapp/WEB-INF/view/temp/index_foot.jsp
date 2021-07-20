@@ -3,14 +3,14 @@
 </div>
 </div>
 </div>
+</div>
+</div>
 <footer>
     <div class="pull-right">
         Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
     </div>
     <div class="clearfix"></div>
 </footer>
-</div>
-</div>
 <script src="${pageContext.request.contextPath}/static/js/jquery-1.12.4.min.js"></script>
 <script src="${pageContext.request.contextPath}/static/js/bootstrap.min.js"></script>
 <script src="${pageContext.request.contextPath}/static/js/fastclick.js"></script>

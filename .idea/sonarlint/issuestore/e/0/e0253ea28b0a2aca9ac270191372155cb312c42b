@@ -1,0 +1,55 @@
+
+E
+java:S3740("/Provide the parametrized type for this generic.(¢²•¾
+E
+java:S3740("/Provide the parametrized type for this generic.(¢²•¾
+E
+java:S3740y"/Provide the parametrized type for this generic.(¢²•¾
+E
+java:S3740y"/Provide the parametrized type for this generic.(¢²•¾
+F
+java:S3740"/Provide the parametrized type for this generic.(¢²•¾
+F
+java:S3740"/Provide the parametrized type for this generic.(¢²•¾
+P
+java:S1191"5Use classes from the Java API instead of Sun classes.(èœ‹¸ÿÿÿÿÿ
+d
+java:S1192*"IDefine a constant instead of duplicating this literal "pageInfo" 4 times.(ì†ê¨ùÿÿÿÿ
+k	java:S117;"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø‰€Ñıÿÿÿÿ
+f	java:S117="QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šğİÛ
+F
+java:S5411·"*Use the primitive boolean expression here.(è¢ûÈúÿÿÿÿ
+V
+java:S1128"@Remove this unused import 'org.apache.ibatis.annotations.Param'.(á¬Ó²
+^
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(–£Ïì
+e
+java:S3252#"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(¾²Ìå
+i
+java:S44885"NReplace "@RequestMapping(method = RequestMethod.DELETE)" with "@DeleteMapping"(ó÷Šÿÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(ùğõĞøÿÿÿÿ
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(£Üüüÿÿÿÿ
+t
+java:S2293;"YReplace the type specification in this constructor call with the diamond operator ("<>").(ø‰€Ñıÿÿÿÿ
+N	java:S106E"9Replace this use of System.out or System.err by a logger.(·Ñ¹ 
+^
+java:S4488V"HReplace "@RequestMapping(method = RequestMethod.PUT)" with "@PutMapping"(äè¶ô
+^
+java:S4488b"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(‹©¹Ã
+^
+java:S4488p"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(®¶‹
+e
+java:S3252t"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(¾²Ìå
+V	java:S125z"<This block of commented-out lines of code should be removed.(ƒ­ªÉøÿÿÿÿ
+N
+java:S1854”"8Remove this useless assignment to local variable "list".(âıÖ9
+f
+java:S3252Š"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(¾²Ìå
+R	java:S125‰"<This block of commented-out lines of code should be removed.(èŞşÒ
+f
+java:S4488Ÿ"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(€ƒ—òÿÿÿÿÿ
+f
+java:S3252Â"OUse static access with "com.github.pagehelper.page.PageMethod" for "startPage".(¾²Ìå
+R	java:S125Á"<This block of commented-out lines of code should be removed.(’ûˆˆ
+?
+java:S1481”")Remove this unused "list" local variable.(âıÖ9

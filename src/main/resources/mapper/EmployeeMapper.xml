@@ -118,7 +118,8 @@ namespace：对应的是映射文件的接口；
     </if>
     <include refid="WithDept_Column_List" />
     from tbl_emp e
-    LEFT JOIN tnl_dept d on e.d_id =d.dept_id
+    LEFT JOIN tnl_dept d
+    on e.d_id =d.dept_id
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -133,7 +134,13 @@ namespace：对应的是映射文件的接口；
     LEFT JOIN tnl_dept d on e.d_id =d.dept_id
     where emp_id = #{empId,jdbcType=INTEGER}
   </select>
-
+  <!--模糊查询-->
+  <select id="selectByLike" resultMap="WithDept">
+    select <include refid="WithDept_Column_List"/>
+    from tbl_emp e
+    left join tnl_dept d on e.d_id=d.dept_id
+    where e.emp_name like '%${empName}%'
+  </select>
   <!--通过主键删除-->
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from tbl_emp

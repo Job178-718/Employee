@@ -1,0 +1,7 @@
+
+K
+java:S1191"5Use classes from the Java API instead of Sun classes.(ó €Þ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ó €Þ
+R
+java:S1128"<Remove this unused import 'javax.servlet.RequestDispatcher'.(Ëöò¼
+V	java:S125"<This block of commented-out lines of code should be removed.(¯Áù”ûÿÿÿÿ

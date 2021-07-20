@@ -5,6 +5,7 @@ import com.github.pagehelper.PageInfo;
 import com.sun.curd.bean.Employee;
 import com.sun.curd.bean.State;
 import com.sun.curd.service.EmployeeService;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,7 +21,6 @@ public class EmployeeController {
     @Autowired
     EmployeeService employeeService;
 
-
     /**
      * 将数据传递给后端
      * @param pn
@@ -31,6 +31,7 @@ public class EmployeeController {
     public String getEmployee(@RequestParam(value = "pn",defaultValue = "1")Integer pn, Model model){
        //@RequestParam(value = "pn",defaultValue = "1"),参数：pn与页面中的参数pn对应，默认第一页
 
+        //通过控制线程查询数据；
         PageHelper.startPage(pn,6);
 
         List<Employee> emps = employeeService.getAll();
@@ -133,7 +134,6 @@ public class EmployeeController {
                          Model model){
         //@RequestParam(value = "pn",defaultValue = "1"),参数：pn与页面中的参数pn对应，默认第一页
 
-
         //pn页码参数，5条数据,从第一页开始展示;
         PageHelper.startPage(pn,6);
 
@@ -185,5 +185,15 @@ public class EmployeeController {
         }else{
             return State.fail().add("va_msg","用户名不可用");
         }
+    }
+
+    @ResponseBody
+    @GetMapping(value="/selectbyname")
+    public State selectbyname(@RequestParam(value = "pn",defaultValue = "1")Integer pn,@RequestParam("name") String name){
+        //首先控制器中的pn应该与前端中的pn对应，employee应该可以接收到前段传来的数据;
+        PageHelper.startPage(pn,6);
+        List<Employee> employees = employeeService.selectByname(name);
+        PageInfo<Employee> page = new PageInfo<>(employees, 5);
+        return State.sucess().add("pageInfo",page);
     }
 }

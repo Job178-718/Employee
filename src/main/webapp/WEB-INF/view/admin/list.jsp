@@ -58,33 +58,25 @@
         </div>
     </div>
 </div>
+
 <!-- 搭建显示页面 -->
 <div class="container">
-    <!--导航页-->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-
-            <%--搜索信息查询--%>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <form class="navbar-form navbar-left">
-                <div class="form-group">
-                        <input type="text" class="form-control" placeholder="姓名">
-                    </div>
-                    <button type="submit" class="btn btn-info" style="margin-top: 5px">查询</button>
-                </form>
-                    <!-- 按钮 -->
+    <%--查找/删除--%>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <div class="row">
-                    <div class="col-md-4 col-md-offset-8">
-                            <button type="button" class="btn btn-primary" id="addEmployee">新增</button>
-                            <button type="button" class="btn btn-primary" id="deleteEmployee">删除</button>
-                        </div>
+                <div class="form-group">
+                    <div class="col-md-4 col-md-offset-10" style="margin-bottom: 20px">
+                        <button type="button" class="btn btn-primary" id="addEmployee">新增</button>
+                        <button type="button" class="btn btn-primary" id="deleteEmployee">删除</button>
                     </div>
+                </div>
+                <!-- 按钮 -->
+                </div>
             </div>
-        </div>
-    </nav>
+    <nav class="navbar navbar-default">
 
-
-    <!-- 表格 -->
+        <!-- 表格 -->
+    <div class="container-fluid">
     <div class="row" style="margin-top: 10px">
         <div class="col-md-12">
             <%--
@@ -125,7 +117,12 @@
     <div class="row">
         <!-- 页码 -->
         <div class="col-md-6">
-            当前第${pageInfo.pageNum}页,共${pageInfo.pages}页,共${pageInfo.total}条记录；
+<%--            当前第${pageInfo.pageNum}页,共${pageInfo.pages}页,共${pageInfo.total}条记录；--%>
+        <a style="margin-top: 20px">
+            <span>当前第</span><input type="button" class="btn btn-sm" value="${pageInfo.pageNum}"/><span>页</span>,
+            <span>共</span><input type="button" class="btn btn-sm" value="${pageInfo.pages}"/><span>页</span>,
+            <span>共</span><input type="button" class="btn btn-sm" value="${pageInfo.total}"/><span>条记录</span>；
+        </a>
         </div>
         <!-- 页面信息 -->
         <div class="col-md-6">
@@ -167,6 +164,8 @@
             </nav>
         </div>
     </div>
+        </div>
+    </nav>
 </div>
 <jsp:include page="../temp/index_foot.jsp"/>
 <script>
@@ -174,25 +173,6 @@
     function toPage(){
         window.location="${pageContext.request.contextPath}/em/employee?pn=${pageInfo.pageNum}";
     }
-
-    <%--//删除按钮--%>
-    <%--$("table tr th .delete_btn").click(function(){--%>
-    <%--    var empName = $(this).parents("tr").find("th:eq(2)").text();--%>
-    <%--    var empId = $(this).attr("del-id");--%>
-    <%--    alert("ajax准备");--%>
-    <%--    if(confirm("是否删除["+empName+"]用户")){--%>
-    <%--        $.ajax({--%>
-    <%--            url:"${pageContext.request.contextPath}/em/emp/"+empId,--%>
-    <%--            type:"DELETE",--%>
-    <%--            success:function(result){--%>
-    <%--                //1.打印是否成功--%>
-    <%--                alert(result.message);--%>
-    <%--                //2.回到本页面--%>
-    <%--                toPage();--%>
-    <%--            }--%>
-    <%--        });--%>
-    <%--    }--%>
-    <%--});--%>
 
 
     //新增员工
@@ -325,6 +305,22 @@
             //toPage();
             window.location="${pageContext.request.contextPath}/em/employee?pn=${pageInfo.pageNum}"
         }
+    });
+
+    $("#selectName").click(function(){
+        var t = $("#selectByName").val();
+
+        $.ajax({
+            url:"${pageContext.request.contextPath}/em/selectbyname.html",
+            data:"name="+t,
+            type:"POST",
+            success:function(result){
+
+            },error:function(){
+                alert("查询失败！");
+            }
+
+        });
     });
 </script>
 

@@ -205,12 +205,11 @@
             //pn：传入的数据；
             type:"GET",
             success:function (result) {
-                // console.log(result);
-                //显示表格内容
+                //1.显示表格内容
                 build_emp_table(result);
-                //页面信息
+                //2.页面信息
                 build_page_info(result);
-                //显示导航
+                //3.显示导航
                 build_emp_nav(result);
             }
         });
@@ -221,6 +220,7 @@
         $("#emp_table tbody").empty();
         var emps = result.extend.pageInfo.list;
         $.each(emps,function(index,item){
+            //1.创建标签
             var checkBoxTd = $("<td><input type='checkbox' class='checkbox_item'/></td>");
             var empIdTd = $("<td></td>").append(item.empId);
             var empNameTd = $("<td></td>").append(item.empName);
@@ -228,13 +228,13 @@
             var empEmailTd = $("<td></td>").append(item.email);
             var empDepartmentTd = $("<td></td>").append(item.department.deptName);
 
-            //编辑按钮
+            //2.创建按钮
+            //2.1 编辑按钮
             var setEmpTd = $("<button></button>").addClass("btn btn-primary btn-sm edit_btn")
                 .append($("<span></span>").addClass("glyphicon glyphicon-pencil"))
                 .append("编辑");
             setEmpTd.attr("edit-id",item.empId);
-
-            //删除按钮
+            //2.2 删除按钮
             var delEmpTd = $("<button></button>").addClass("btn btn-danger btn-sm  delete_btn")
                 .append($("<span></span>").addClass("glyphicon glyphicon-trash"))
                 .append("删除");
@@ -242,6 +242,7 @@
 
             //合并单元格
             var btnTd = $("<td></td>").append(setEmpTd).append(" ").append(delEmpTd);
+
             //表格拼接
             $("<tr></tr>").append(checkBoxTd)
                 .append(empIdTd)
@@ -251,8 +252,6 @@
                 .append(empDepartmentTd)
                 .append(btnTd)
                 .appendTo("#emp_table tbody");
-
-
         })
     }
 
