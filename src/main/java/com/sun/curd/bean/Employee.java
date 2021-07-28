@@ -2,10 +2,6 @@ package com.sun.curd.bean;
 
 import org.springframework.stereotype.Component;
 
-/**
- * @author JOb178-718
- *
- */
 
 @Component
 public class Employee {

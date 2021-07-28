@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="refresh" content="600"/>
     <title>员工管理系统</title>
-    <link href="${pageContext.request.contextPath}/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/static/css/nprogress.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/static/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
@@ -60,14 +60,14 @@
                             <li><a><i class="fa fa-home"></i> 我的信息 <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
                                     <li><a href="${pageContext.request.contextPath}/admin/personal">个人主页</a></li>
-                                    <li><a href="${pageContext.request.contextPath}/admin/upload">修改头像</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/admin/personal">修改头像</a></li>
                                     <li><a href="#">我的通知</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-id-card"></i> 员工管理<span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="${pageContext.request.contextPath}/admin/select.html">快速查找</a></li>
                                     <li><a href="${pageContext.request.contextPath}/em/employee">员工信息</a></li>
+                                    <li><a href="${pageContext.request.contextPath}/admin/select.html">查找员工</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -75,7 +75,7 @@
                 </div>
                 <div class="sidebar-footer hidden-small">
                     <a data-toggle="tooltip" data-placement="top" title="Settings">
-                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                            <i class="glyphicon glyphicon-cog"></i>
                     </a>
                     <a data-toggle="tooltip" data-placement="top" title="FullScreen">
                         <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
@@ -83,7 +83,7 @@
                     <a data-toggle="tooltip" data-placement="top" title="Lock">
                         <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
                     </a>
-                    <a data-toggle="tooltip" data-placement="top" title="Logout" href="${pageContext.request.contextPath}/admin/singnOut">
+                    <a data-toggle="tooltip" data-placement="top" title="Logout" href="${pageContext.request.contextPath}/admin/singnOut.html">
                         <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
                     </a>
                 </div>
@@ -105,7 +105,7 @@
                             <ul class="dropdown-menu dropdown-usermenu pull-right">
                                 <li><a href="${pageContext.request.contextPath}/admin/personal"> 个人主页</a></li>
                                 <li><a href="javascript:;">修改密码</a></li>
-                                <li><a href="${pageContext.request.contextPath}/admin/singnOut"><i class="fa fa-sign-out pull-right"></i> 登出</a></li>
+                                <li><a href="${pageContext.request.contextPath}/admin/singnOut.html"><i class="fa fa-sign-out pull-right"></i> 登出</a></li>
                             </ul>
                         </li>
                         <li role="presentation" class="dropdown">
@@ -146,5 +146,6 @@
                 </div>
                 <div class="clearfix"></div>
                 <div class="row">
+
 
 

@@ -2,6 +2,7 @@ package com.sun.curd.controller;
 
 import com.sun.curd.bean.Admin;
 import com.sun.curd.bean.State;
+import com.sun.curd.commons.Comoons;
 import com.sun.curd.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,49 +22,59 @@ public class AdminController {
     @Autowired
     AdminService adminService;
 
-    @GetMapping("/login")
+    //1 登录页面
+    @GetMapping("/login.html")
     public String loginMange(){
         return "login";
     }
 
-    @PostMapping("/main")
+    //2 登录成功
+    @GetMapping("/index.html")
+    public String loginSucess(){
+        return "admin/main";
+    }
+
+    //3 登录验证
+    @PostMapping("/main.html")
     public String loginMange(String username, String password, HttpSession session, Model model){
         System.out.println("登录");
         Admin login = adminService.login(username, password);
         if(login!=null){
             session.setAttribute("admin",login);
-            return "admin/main";
+            return "redirect:/admin/index.html";
         }
         model.addAttribute("msg","密码或者账号错误");
-        return "login";
+        return "redirect:/admin/login.html";
     }
 
+
+    //4 更改图像
     @ResponseBody
     @GetMapping("/flushImg")
     public State flushImg(HttpServletRequest request){
         HttpSession session = request.getSession();
-        Admin admin  = (Admin)session.getAttribute("admin");
+        Admin admin  = (Admin)session.getAttribute(Comoons.ADMIN);
         Integer id = admin.getLayId();
         System.out.println(id);
         Admin admin1 = adminService.queryById(id);
-        return State.sucess().add("admin",admin);
+        return State.sucess().add(Comoons.ADMIN,admin);
     }
 
-    @GetMapping("/singnOut")
-    public String singOut(){
-        return "login";
+    //5 退出实现
+    @GetMapping("/singnOut.html")
+    public String singOut(HttpSession session){
+        session.invalidate();
+        return "redirect:/admin/login.html";
     }
 
-    /**
-     *
-     * @return
-     */
+    //6 跳转到个人信息页
     @GetMapping("/personal")
-   public String personInformation(){
+     public String personInformation(){
         return "admin/personal";
    }
 
 
+    //7 图片上传
     @PostMapping("/uploadPicture")
     public String upload(@RequestParam("file") CommonsMultipartFile file, HttpServletRequest request) throws IOException {
 
@@ -102,14 +113,13 @@ public class AdminController {
         return "/admin/personal";
     }
 
-
     @GetMapping("/upload")
-    public String uploadImage(@RequestParam("file") CommonsMultipartFile file,HttpServletRequest request)throws IOException{
+    public String modifyImage(@RequestParam("file") CommonsMultipartFile file, HttpServletRequest request) throws IOException {
 
         //获取原始文件名
         String uploadFilename = file.getOriginalFilename();
         if("".equals(uploadFilename)){
-            return "/admin/upload";
+            return "/admin/personal";
         }
         System.out.println("上传文件名："+uploadFilename);
 
@@ -141,10 +151,16 @@ public class AdminController {
         return "/admin/upload";
     }
 
+
     @GetMapping("/select.html")
     public String selectByQuite(){
         return "admin/find";
     }
 
+
+    @PostMapping("/flushPage")
+    public String flush(){
+        return "";
+    }
 
 }

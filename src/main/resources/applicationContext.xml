@@ -5,8 +5,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns="http://www.springframework.org/schema/beans"
        xmlns:tx="http://www.springframework.org/schema/tx" default-lazy-init="true">
-    <!--加载jdbc.properties-->
-    <context:property-placeholder location="classpath:jdbc.properties"/>
+<!--    &lt;!&ndash;加载jdbc.properties&ndash;&gt;-->
+<!--    <context:property-placeholder location="classpath:jdbc.properties"/>-->
 
     <!--=============数据源的配置=================-->
     <context:component-scan base-package="com.sun.curd" use-default-filters="true">
@@ -14,13 +14,32 @@
     </context:component-scan>
 
     <!--数据源配置-->
-    <bean id="pooledDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-        <property name="driverClass" value="${jdbc.driver}"/>
-        <property name="jdbcUrl" value="${jdbc.url}"/>
-        <property name="user" value="${jdbc.user}"/>
-        <property name="password" value="${jdbc.password}"/>
+    <!--druid配置信息-->
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="ignoreUnresolvablePlaceholders" value="true" />
+        <property name="locations">
+            <list>
+                <value>classpath:jdbc.properties</value>
+            </list>
+        </property>
     </bean>
-    
+    <bean id="pooledDataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.user}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <!--初始化值-->
+        <property name="initialSize" value="3" />
+        <!--最小空余的数量-->
+        <property name="minIdle" value="3" />
+        <!--最大连接数量-->
+        <property name="maxActive" value="20" />
+        <!--最长等待时间-->
+        <property name="maxWait" value="60000" />
+        <!--过滤器-->
+        <property name="filters" value="stat,wall" />
+    </bean>
+
     <!--============================Mybatis的配置==========================================-->
     <!--配置和整合mybatis-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
@@ -30,6 +49,7 @@
         <!--引入映射文件-->
         <property name="mapperLocations" value="classpath:mapper/*.xml"/>
     </bean>
+
     <!--扫描Mapper包-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.sun.curd.dao"/>
@@ -70,4 +90,22 @@
         <property name="maxUploadSize" value="10485760"/>
         <property name="maxInMemorySize" value="40960"/>
     </bean>
+
+
+
+    <!--监控数据库druid-->
+    <bean id="stat-filter" class="com.alibaba.druid.filter.stat.StatFilter">
+        <property name="slowSqlMillis" value="3000" />
+        <!--记录sql-->
+        <property name="logSlowSql" value="true" />
+        <!--记录sql的时候可以合并-->
+        <property name="mergeSql" value="true" />
+    </bean>
+
+
+    <!--防火墙过滤-->
+    <bean id="wall-filter" class="com.alibaba.druid.wall.WallFilter">
+        <property name="dbType" value="mysql" />
+    </bean>
+
 </beans>

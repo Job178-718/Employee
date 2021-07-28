@@ -22,7 +22,7 @@
 <div id="Login-box">
     <h2 style="color: #fff;">请登录</h2>
     <div class="form">
-        <form action="${pageContext.request.contextPath}/admin/main" method="POST">
+        <form action="${pageContext.request.contextPath}/admin/main.html" method="POST">
             <div class="item">
                 <c:if test="not empty ${msg}">
                    <label style="color:red" title="${msg}"/>
@@ -34,7 +34,7 @@
             </div>
             <div class="item">
                 <i class="fa fa-key" aria-hidden="true"></i>
-                <input type="password" placeholder="Password" name="password"/>
+                <input type="password" placeholder="Password" name="password" value="aaa"/>
             </div>
             <button type="submit">Login</button>
         </form>

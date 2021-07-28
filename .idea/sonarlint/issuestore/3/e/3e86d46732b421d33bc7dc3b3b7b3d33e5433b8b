@@ -3,7 +3,8 @@ DWeb:MetaRefreshCheck
 "Remove this meta refresh tag.(§»¬8Êë†Ã«/
 HWeb:BoldAndItalicTagsCheck<"Replace this <i> tag by <em>.(¶ñÿáüÿÿÿÿ
 HWeb:BoldAndItalicTagsCheckC"Replace this <i> tag by <em>.(ó„ãîùÿÿÿÿ
-CWeb:BoldAndItalicTagsCheck`"Replace this <i> tag by <em>.(‡¥‘¦
-CWeb:BoldAndItalicTagsCheckl"Replace this <i> tag by <em>.(–ø“¸
-CWeb:BoldAndItalicTagsCheckq"Replace this <i> tag by <em>.(…Ø¹¤
-CWeb:BoldAndItalicTagsCheck…"Replace this <i> tag by <em>.(€Óš+
+OWeb:BoldAndItalicTagsCheckN"Replace this <i> tag by <em>.(Ó¢Ùàûÿÿÿÿ8œãˆè­/
+JWeb:BoldAndItalicTagsCheck`"Replace this <i> tag by <em>.(‡¥‘¦8ãˆè­/
+OWeb:BoldAndItalicTagsCheckl"Replace this <i> tag by <em>.(œ€ºîşÿÿÿÿ8Ÿãˆè­/
+JWeb:BoldAndItalicTagsCheckq"Replace this <i> tag by <em>.(…Ø¹¤8 ãˆè­/
+JWeb:BoldAndItalicTagsCheck…"Replace this <i> tag by <em>.(€Óš+8¢ãˆè­/

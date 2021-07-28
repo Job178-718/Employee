@@ -3,12 +3,7 @@ package com.sun.curd.bean;
 import java.util.Date;
 import java.io.Serializable;
 
-/**
- * (Admin)实体类
- *
- * @author makejava
- * @since 2021-05-31 16:54:51
- */
+
 public class Admin implements Serializable {
     private static final long serialVersionUID = 497275371761007213L;
     

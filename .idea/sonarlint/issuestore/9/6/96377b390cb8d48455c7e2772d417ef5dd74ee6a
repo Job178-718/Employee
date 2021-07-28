@@ -1,24 +1,23 @@
 
 d
-java:S2095~"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(ªÄª¡
-d
-java:S2095W"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(ªÄª¡
+java:S2095b"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(ªÄª¡
+e
+java:S2095ˆ"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(ªÄª¡
 P
 java:S1191"5Use classes from the Java API instead of Sun classes.(èœ‹¸ÿÿÿÿÿ
+f
+java:S1192T"PDefine a constant instead of duplicating this literal "/admin/personal" 3 times.(÷Ü´”
 a
-java:S1192""FDefine a constant instead of duplicating this literal "admin" 5 times.(ã¤…úÿÿÿÿ
-\
-java:S1192"FDefine a constant instead of duplicating this literal "login" 3 times.(Íı‡Ç
+java:S1192+"FDefine a constant instead of duplicating this literal "admin" 3 times.(ã¤…úÿÿÿÿ
 g
-java:S1128
-"LRemove this unused import 'org.springframework.web.multipart.MultipartFile'.(ôŸœÿÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(”ßÓîûÿÿÿÿ
+java:S1128"LRemove this unused import 'org.springframework.web.multipart.MultipartFile'.(ôŸœÿÿÿÿÿ
+S	java:S106("9Replace this use of System.out or System.err by a logger.(”ßÓîûÿÿÿÿ
 P
-java:S18540":Remove this useless assignment to local variable "admin1".(Ùï‡Œ
-N	java:S106/"9Replace this use of System.out or System.err by a logger.(ö¡¹ê
-N	java:S106K"9Replace this use of System.out or System.err by a logger.(•ìšÆ
-S	java:S106S"9Replace this use of System.out or System.err by a logger.(ÏÉòûÿÿÿÿ
-N	java:S106r"9Replace this use of System.out or System.err by a logger.(•ìšÆ
-S	java:S106z"9Replace this use of System.out or System.err by a logger.(ÏÉòûÿÿÿÿ
+java:S1854;":Remove this useless assignment to local variable "admin1".(Ùï‡Œ
+N	java:S106:"9Replace this use of System.out or System.err by a logger.(ö¡¹ê
+N	java:S106V"9Replace this use of System.out or System.err by a logger.(•ìšÆ
+S	java:S106^"9Replace this use of System.out or System.err by a logger.(ÏÉòûÿÿÿÿ
+N	java:S106|"9Replace this use of System.out or System.err by a logger.(•ìšÆ
+T	java:S106„"9Replace this use of System.out or System.err by a logger.(ÏÉòûÿÿÿÿ
 A
-java:S14810"+Remove this unused "admin1" local variable.(Ùï‡Œ
+java:S1481;"+Remove this unused "admin1" local variable.(Ùï‡Œ

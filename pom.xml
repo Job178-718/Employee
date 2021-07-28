@@ -73,6 +73,13 @@
       <artifactId>c3p0</artifactId>
       <version>0.9.1.2</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+      <version>1.0.1</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
     <dependency>
       <groupId>mysql</groupId>

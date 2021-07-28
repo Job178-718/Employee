@@ -139,7 +139,7 @@ namespace：对应的是映射文件的接口；
     select <include refid="WithDept_Column_List"/>
     from tbl_emp e
     left join tnl_dept d on e.d_id=d.dept_id
-    where e.emp_name like '%${empName}%'
+    where e.emp_name like concat('%',#{empName},'%')
   </select>
   <!--通过主键删除-->
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">

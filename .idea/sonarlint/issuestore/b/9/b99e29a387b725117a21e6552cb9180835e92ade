@@ -1,5 +1,0 @@
-
-P
-java:S1191"5Use classes from the Java API instead of Sun classes.(‘ÔñÁøÿÿÿÿ
-c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú×Ğ
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ8Ü¼­ìª/

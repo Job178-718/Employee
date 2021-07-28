@@ -1,9 +1,7 @@
 package com.sun.curd.test;
 
-import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.sun.curd.OneByOneEmployee;
 import com.sun.curd.bean.Admin;
 import com.sun.curd.bean.Employee;
 import com.sun.curd.bean.EmployeeExample;
@@ -166,11 +164,8 @@ public class SpringTest {
     }
 
     @Test
-    public void prit(){
-        PageHelper.startPage(1,6);
-        List<Employee> all = employeeService.getAll();
-        OneByOneEmployee<Employee> adminOneByOneEmployee = new OneByOneEmployee<>();
-        adminOneByOneEmployee.OneByOnePrintln(all);
+    public void print(){
+
     }
 
 }
